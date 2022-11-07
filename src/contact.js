@@ -1,5 +1,9 @@
+
+
 const contact = () => {
     const cont = document.createElement("div");
+    const header = document.createElement("h1");
+    header.textContent = "Contact";
 
     // Creating card for 1st employee
     const cont1 = document.createElement("div");
@@ -39,8 +43,8 @@ const contact = () => {
     contInfo3.append(num3, email3);
     cont3.append(head3, contInfo3);
     cont3.classList.add("card");
-    
-    cont.append(cont1, cont2, cont3);
+
+    cont.append(header, cont1, cont2, cont3);
     return cont;
 }
 
