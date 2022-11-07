@@ -1,6 +1,9 @@
-import { home } from "./home"
+import { home } from "./home";
+import { contact } from "./contact"
 
 const body = document.querySelector("#content");
+const holder = document.createElement("div");
+holder.classList.add("holder");
 
 const header = document.createElement("header");
 const linkCont = document.createElement("ul");
@@ -14,4 +17,5 @@ linkCont.append(homeLink, aboutLink, menuLink);
 linkCont.classList.add("links");
 header.append(linkCont);
 body.append(header);
-body.append(home())
+holder.append(contact())
+body.append(holder)
