@@ -1,8 +1,7 @@
-import item1 from "./img/item1.jpg"
-import item2 from "./img/item2.jpg"
-import item3 from "./img/item3.jpg"
-import item4 from "./img/item4.jpg"
-
+import item1 from "./img/item1.jpg";
+import item2 from "./img/item2.jpg";
+import item3 from "./img/item3.jpg";
+import item4 from "./img/item4.jpg";
 
 const menu = () => {
   const cont = document.createElement("div");
@@ -74,6 +73,7 @@ const menu = () => {
   cont4.classList.add("card");
 
   cont.append(header, cont1, cont2, cont3, cont4);
+  cont.classList.add("container");
   return cont;
 };
 

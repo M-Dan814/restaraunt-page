@@ -19,6 +19,7 @@ const home = () => {
   reviewer.textContent = "Generic Person";
   review.append(review_text);
   review.append(reviewer);
+  review.classList.add("card");
 
   // Create the Time Section
   const times = document.createElement("div");
@@ -43,6 +44,7 @@ const home = () => {
   t7.textContent = "Sunday: 08:00 - 20:00";
   time_list.append(t1, t2, t3, t4, t5, t6, t7);
   times.append(time_list);
+  times.classList.add("card");
 
   // Create the Location Section
   const loc = document.createElement("div");
@@ -54,8 +56,10 @@ const home = () => {
   location.textContent +=
     "Some City Somewhere, Some Town Somewhere, Some Street Somewhere, Building Somewhere";
   loc.append(location);
+  loc.classList.add("card");
   // Appending the divs
   home_body.append(restaraunt_name, review, times, loc);
+  home_body.classList.add("container");
   return home_body;
 };
 

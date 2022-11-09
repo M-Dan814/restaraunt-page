@@ -45,6 +45,7 @@ const contact = () => {
     cont3.classList.add("card");
 
     cont.append(header, cont1, cont2, cont3);
+    cont.classList.add("container");
     return cont;
 }
 
