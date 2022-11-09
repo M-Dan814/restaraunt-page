@@ -1,6 +1,12 @@
+@font-face {
+  font-family: Roboto;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto";
 }
 
 #content {
@@ -8,13 +14,17 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  background-image: linear-gradient(to bottom, rgba(204, 127, 55, 0.5), rgba(204, 127, 55, 0.5)),url("./img/bg-img.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(55, 132, 204, 0.5),
+      rgba(55, 132, 204, 0.5)
+    ),
+    url("./img/bg-img.jpg");
   background-size: 5vh;
-  
 }
 
 .header {
-  background-color: rgb(204, 127, 55);
+  background-color: rgb(0, 60, 255);
   border-radius: 3px;
   color: white;
   padding: 3px;
@@ -29,21 +39,21 @@
 
 #home:hover {
   cursor: pointer;
-  background-color: rgb(70, 112, 76);
+  background-color: rgb(167, 88, 88);
 }
 
 #contact:hover {
   cursor: pointer;
-  background-color: rgb(70, 112, 76);
+  background-color: rgb(167, 88, 88);
 }
 
 #menu:hover {
   cursor: pointer;
-  background-color: rgb(70, 112, 76);
+  background-color: rgb(167, 88, 88);
 }
 
 .active {
-  background-color: rgb(70, 112, 76);
+  background-color: rgb(167, 88, 88);
 }
 
 ul {
@@ -61,7 +71,7 @@ ul {
   width: 60%;
   margin: auto;
   border-radius: 3px;
-  background-color: rgb(224, 135, 0);
+  background-color: rgb(41, 92, 168);
   min-height: 100vh;
   padding: 8px;
   box-sizing: border-box;
@@ -73,7 +83,7 @@ ul {
   min-height: 25vh;
   box-sizing: border-box;
   margin: auto;
-  background-color: rgb(201, 121, 24);
+  background-color: rgb(9, 153, 219);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -90,4 +100,8 @@ ul {
 .price {
   font-weight: 900;
   font-size: 20px;
+}
+
+h1 {
+  color: rgb(252, 210, 203);
 }
